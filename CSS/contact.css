@@ -1,0 +1,368 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body{
+  overflow-x: hidden;
+
+}
+body {
+  background-color: rgb(9, 56, 65) !important;
+}
+body.o {
+  overflow-y: hidden;
+}
+a {
+  text-decoration: none !important;
+  color: black !important;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+header {
+  position:fixed;
+  top: 0;
+  background-color: rgb(9, 56, 65);
+  color: white !important;
+  z-index: 200;
+  width: 100%;
+  margin-bottom: 200px;
+  box-shadow: 0px 0px 3px 1px rgba(0, 99, 102, 0.95);
+}
+
+.hover-color{
+  color: white !important;
+}
+.hover-color:hover {
+  background-color: rgb(10, 80, 94);
+  color: white !important;
+}
+
+
+.blue {
+  color: rgb(255, 30, 191);
+  margin-left: 30px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  font-family: serif;
+
+}
+.logo {
+  font-size: 1.8rem;
+  color: rgb(5, 5, 116);
+  padding-left: 20px;
+}
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 30px;
+  height: 4px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+.nav__link {
+  position: fixed;
+  width: 100%;
+  top: 58px;
+  background-color: rgb(9, 56, 65);
+  transform: translateX(200vw);
+  transition: 2s;
+}
+.nav__link.hide{
+  transform: translateX(0px);
+  transition: 2s;
+}
+.nav__link a {
+  display: block;
+  padding: 10px 0 10px 20px;
+}
+.aboutHome {
+  margin-top: 80px;
+}
+.aboutMain {
+  margin-top: 78px;
+  text-align: center;
+  background-color: rgb(10, 80, 94);
+  padding: 30px;
+}
+#homeID {
+  color: white !important;
+  font-family: serif;
+}
+#aboutID {
+  color: white !important;
+  font-family: serif;
+}
+.aboutCom h3 {
+  color: white;
+  font-size: 60px;
+  font-family: serif;
+}
+.aboutP {
+  margin-bottom: 40px;
+}
+.aboutP p {
+  color: white !important;
+  font-family: serif;
+}
+.fa-chevron-right {
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.reviewMain {
+  text-align: center;
+  background-color: rgb(9, 56, 65);
+  margin-bottom: 30px;
+  /* border: 1px solid white; */
+  padding: 20px;
+  margin-top: 10px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.95);
+  margin-bottom: 50px;
+}
+.reviewMain1 {
+  text-align: center;
+}
+.reviewMain1 h3 {
+  color: white;
+  font-family: serif;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.reviewMain1 h6 {
+  color: white;
+  font-family: serif;
+  font-size: 40px;
+}
+.reviewMain1 p {
+  color: white;
+  font-family: serif;
+  font-size: 17px;
+}
+.form {
+  text-align: start !important;
+  background-color: rgb(10, 80, 94);
+  padding: 20px;
+}
+.touch {
+  background-color: rgb(10, 80, 94);
+  padding: 20px;
+}
+.inTouch {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.touch h6 {
+  color: white;
+}
+.touch h3 {
+  color: white;
+  font-size: 40px;
+}
+.touch h5 {
+  color: white;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.touch p {
+  color: white;
+}
+.fa-envelope-open-text {
+  color: white;
+  padding-right: 8px;
+  margin-top: 5px;
+}
+.fa-phone-alt {
+  color: white;
+  padding-right: 8px;
+  margin-top: 5px;
+}
+.fa-clock {
+  color: white;
+  padding-right: 8px;
+  margin-top: 5px;
+}
+#firstname {
+  padding: 17px;
+  width: 100%;
+  background-color: rgb(9, 56, 65);
+  border: none;
+}
+#firstname::placeholder {
+  color: white;
+}
+#lastname {
+  padding: 17px;
+  width: 100%;
+  background-color: rgb(9, 56, 65);
+  border: none;
+}
+#lastname::placeholder {
+  color: white;
+}
+#email {
+  padding: 17px;
+  width: 100%;
+  background-color: rgb(9, 56, 65);
+  border: none;
+}
+#email::placeholder {
+  color: white;
+}
+#textarea {
+  width: 100%;
+  background-color: rgb(9, 56, 65);
+  border: none;
+}
+#textarea::placeholder {
+  color: white;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+#textarea:focus {
+  border: 1px solid red;
+}
+.all {
+  margin-bottom: 20px;
+}
+.subContact {
+  border: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(9, 56, 65);
+  margin-top: 5px;
+
+}
+.req {
+  display: none;
+}
+.req1 {
+  display: none;
+}
+.req2 {
+  display: none;
+}
+.req3 {
+  display: none;
+}
+.map {
+  width: 100%;
+  margin-top: 20px;
+  border: 5px solid white;
+  height: 70vh;
+}
+.footer-icon {
+  width: 24%;
+}
+.sub-footer {
+  padding: 50px;
+  padding-left: 30px !important;
+  background-color: rgb(10, 80, 94);
+}
+.footer-campus h5 {
+  color: white;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+.aca-footer h5 {
+  color: white;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+.camp-footer h5 {
+  color: white;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+.footer-email {
+  color: white !important;
+  font-size: 17px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.footer-item {
+  color: white !important;
+  font-size: 17px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.con-otp-form {
+  margin-top: 100px;
+}
+.otpsumbit {
+  background-color: #1a6565 !important;
+  color: white;
+}
+.fa-linkedin {
+  color: white;
+  padding-right: 20px;
+}
+.fa-facebook {
+  color: white;
+  padding-right: 20px;
+}
+.fa-twitter {
+  color: white;
+  padding-right: 20px;
+}
+.fa-youtube {
+  color: white;
+  padding-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .footer-campus h5 {
+    margin-top: 20px;
+  }
+  .aca-footer h5 {
+    margin-top: 20px;
+  }
+  .camp-footer h5 {
+    margin-top: 20px;
+  }
+}
+
+
+
+@media screen and (min-width: 830px) {
+  .nav__link {
+    display: block;
+    position: static;
+    width: auto;
+    margin-right: 20px;
+    background: none;
+    transform: none;
+  }
+
+  .nav__link a {
+    display: inline-block;
+    padding: 15px 20px;
+    text-align: start;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}

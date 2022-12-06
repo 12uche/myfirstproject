@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html, body{
+    overflow-x: hidden;
+    color: white;
+
+  } body {
+    background-color: rgb(9, 56, 65) !important;
+  }
+  body.o {
+    overflow-y: hidden;
+  }
+  a {
+    text-decoration: none !important;
+    color: black !important;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  header {
+    position:fixed;
+    top: 0;
+    background-color: rgb(9, 56, 65);
+    color: white !important;
+    z-index: 200;
+    width: 100%;
+    margin-bottom: 200px;
+    box-shadow: 0px 0px 3px 1px rgba(0, 99, 102, 0.95);
+  }
+
+  .hover-color{
+    color: white !important;
+  }
+  .hover-color:hover {
+    background-color: rgb(10, 80, 94);
+    color: white !important;
+  }
+
+
+  .blue {
+    color: rgb(255, 30, 191); 
+    margin-left: 30px;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    font-family: serif;
+
+  }
+  .logo {
+    font-size: 1.8rem;
+    color: rgb(5, 5, 116);
+    padding-left: 20px;
+  }
+  .hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+  }
+  
+  .hamburger .line {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin-bottom: 10px;
+    background-color: white;
+  }
+  .nav__link {
+    position: fixed;
+    width: 100%;
+    top: 58px;
+    background-color: rgb(9, 56, 65);
+    transform: translateX(200vw);
+    transition: 2s;
+  }
+  .nav__link.hide{
+    transform: translateX(0px);
+    transition: 2s;
+  }
+  .nav__link a {
+    display: block;
+    padding: 10px 0 10px 20px;
+  }  
+  .footer-email {
+    color: white !important;
+    font-size: 17px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .footer-item {
+    color: white !important;
+    font-size: 17px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .con-otp-form {
+    margin-top: 100px;
+  }
+  .otpsumbit {
+    background-color: #1a6565 !important;
+    color: white;
+  }
+  .fa-linkedin {
+    color: white;
+    padding-right: 20px;
+  }
+  .fa-facebook {
+    color: white;
+    padding-right: 20px;
+  }
+  .fa-twitter {
+    color: white;
+    padding-right: 20px;
+  }
+  .fa-youtube {
+    color: white;
+    padding-right: 20px;
+  }
+
+.sub-footer {
+    padding: 50px;
+    padding-left: 30px !important;
+    background-color: rgb(10, 80, 94) !important;
+    margin-top: 30px;
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .footer-campus h5 {
+    margin-top: 20px;
+  }
+  .aca-footer h5 {
+    margin-top: 20px;
+  }
+  .camp-footer h5 {
+    margin-top: 20px;
+  }
+}
+
+  
+  @media screen and (min-width: 830px) {
+    .nav__link {
+      display: block;
+      position: static;
+      width: auto;
+      margin-right: 20px;
+      background: none;
+      transform: none;
+    }
+  
+    .nav__link a {
+      display: inline-block;
+      padding: 15px 20px;
+      text-align: start;
+    }
+  
+    .hamburger {
+      display: none;
+    }
+  }

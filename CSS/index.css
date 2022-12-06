@@ -1,0 +1,639 @@
+/* general styling */
+
+* {
+  /* box-sizing: border-box; */
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  background-image: linear-gradient(rgba(249, 245, 245, 0.95), rgba(249, 245, 245, 0.95)), url(../img/r-architecture-A0aoiM8doMk-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+body.o {
+  overflow-y: hidden;
+}
+
+a {
+  text-decoration: none !important;
+  color: rgb(255, 255, 255) !important;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+
+/* header section */
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 2000;
+}
+.scrolled{
+  background-color: #1a6565;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  font-family: serif;
+
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav a:hover {
+  border-bottom: 3px solid #4E8075;
+  padding-bottom: 10px;
+}
+
+#logo img{
+  width: 40%;
+  margin-top:50%;
+}
+#logo h1{
+  font-family: 'Dancing Script', serif;
+  color: white;
+}
+.img{
+  display: block !important;
+}
+
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 30px;
+  height: 4px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+.link{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav__link {
+  position: fixed;
+  width: 100%;
+  top: 58px;
+  background-color: rgb(9, 56, 65);
+  transform: translateX(200vw);
+  transition: 2s;
+}
+
+#logo1 a{
+  display:flex;
+}
+
+#logo1 h3{
+  padding-top: 10px;
+  font-family: 'Dancing Script', serif;
+  color: white;
+  padding-left: 10px;
+}
+
+#logo1 img{
+  width: 15%;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.nav__link.hide {
+  transform: translateX(200px);
+  transition: 2s;
+}
+.nav button{
+  padding: 10px;
+  border-radius: 15px 15px;
+  background-color: transparent;
+  font-size: 20px;
+  border: none;
+  color: white;
+}
+.nav button:hover{
+  background: rgba(10, 122, 117, 0.6);
+  border: 1px solid black;
+}
+
+.nav__link a {
+  display: block;
+  padding: 10px 0 10px 20px;
+}
+
+/* index page content */
+
+.us img {
+  height: 30vh;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.fee a{
+  background:  #1a6565;
+  padding: 10px;
+  padding-bottom: 5px;
+  border-radius: 15px 15px;
+  margin-top: 5rem;
+  text-align: center;
+}
+.fee a:hover{
+  border: 4px solid rgba(10, 122, 117, 0.6);
+  background: transparent;
+  border-radius: 15px 15px;
+}
+
+.joy{
+  background-image: linear-gradient(rgba(10, 122, 117, 0.6), rgba(241, 238, 238, 0.8)), url(../img/r-architecture-2gDwlIim3Uw-unsplash.jpg) ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  padding-top: 10rem;
+  text-align: center;
+}
+.fee{
+  display: flex;
+  background-color:  #1a6565;
+}
+.fee h1{
+  font-size: 40px;
+  font-weight: 500;
+}
+.fee h4{
+  margin-bottom: 40px;
+}
+
+.m{
+  border-bottom: 3px solid rgb(0, 0, 0);
+  padding-bottom: 5px;
+}
+
+.yo {
+  color: #4E8075;
+}
+
+.mo img{
+  border-radius: 25%;
+  height: 90vh;
+}
+
+.howText{
+  color: black;
+  font-size: 50px;
+}
+.howText2{
+  color: black;
+}
+
+
+center {
+  margin-top: 50px;
+}
+
+hr {
+  background-color: rgb(41, 94, 81);
+  width: 100%;
+  height: 1vh;
+  
+}
+.change{
+  color: black;
+}
+
+.normal{
+  border-radius: 15px 15px;
+  padding: 8px;
+  background-color: #1a6565;
+  color: white;
+}
+
+.fa-check{
+  color: black;
+}
+
+.write h1 {
+  font-weight: 600;
+}
+
+.write p {
+  font-weight: bolder;
+}
+
+.aboutHome {
+  margin-top: 80px;
+}
+
+.aboutMain {
+  margin-top: 78px;
+  text-align: center;
+  background-color: rgb(27, 54, 59);
+  padding: 30px;
+  margin-top: 0%;
+}
+
+.aboutCom h3 {
+  color: #4E8075;
+  font-size: 60px;
+  font-family: serif;
+}
+
+.aboutP {
+  margin-bottom: 40px;
+}
+
+.aboutP p {
+  color: #4E8075 !important;
+  font-family: serif;
+}
+.u img {
+  border-radius: 25px;
+}
+
+
+
+.howCheck {
+  padding: 5px;
+  color: #4E8075;
+}
+
+
+/* Banner Section */
+#banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url('../img/bilal-mansuri-yf8X5_FkIUY-unsplash.jpg');
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px;
+}
+
+#banner h4 {
+  color: #fff;
+  font-size: 30px;
+  padding: 10px 0;
+}
+
+#banner h2 {
+  color: #4E8075;
+}
+
+#banner button:hover {
+  background-color: #088178;
+  color: #fff;
+}
+
+.section-p1 {
+  padding: 40px 0;
+}
+
+.section-p1 {
+  padding: 40px 0;
+}
+
+.section-p1 img{
+  height: 300px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+/* Featured Products */
+#product1 {
+  text-align: center;
+}
+
+#product1 .pro-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 0 0;
+  flex-wrap: wrap;
+}
+
+#product1 .pro {
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #cce7d0;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+  margin: 15px 0;
+  transition: 0.2s ease;
+  position: relative;
+}
+
+#product1 .pro:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.6);
+}
+
+#product1 .pro img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.fa-star {
+  color: gold;
+}
+
+#product1 .pro .des {
+  text-align: start;
+  padding: 10px 0;
+}
+
+#product1 .pro .des span {
+  color: #606063;
+  font-size: 12px;
+}
+
+#product1 .pro .des h5 {
+  color: #1a1a1a;
+  padding-top: 7px;
+  font-size: 14px;
+}
+
+#product1 .pro .des i {
+  font-size: 12px;
+}
+
+#product1 .pro .des h4 {
+  padding-top: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #088178;
+}
+
+#product1 .pro .cart {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: #e8f6ea;
+  color: #088178;
+  border: 1px solid #cce7d0;
+  position: absolute;
+  bottom: 35px;
+  right: 10px;
+}
+
+
+
+
+/* Newletter */
+
+#newletter {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url('../img/alona-gross-y0Zlus5aCYI-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-position: 20% 30%;
+  background-color: #041e42;
+  padding: 10px;
+  margin-bottom: 0%;
+}
+
+#newletter h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+
+#newletter p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #818ea0;
+}
+
+#newletter .form {
+  display: flex;
+  width: 30%;
+}
+
+#newletter input {
+  height: 3.125rem;
+  padding: 0 1.25em;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#newletter button {
+  background-color: #088178;
+  color: #fff;
+  white-space: nowrap;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 100px;
+}
+
+/* footer section */
+
+.footer-icon {
+  width: 24%;
+}
+
+.sub-footer {
+  padding: 50px;
+  padding-left: 30px !important;
+  background-color: #1a6565;
+  color: black;
+
+}
+
+.footer-campus h5 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+
+.aca-footer h5 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+
+.camp-footer h5 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+
+.footer-email {
+  color: #083d31 !important;
+  font-size: 17px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footer-item {
+  color: #0a483a !important;
+  font-size: 17px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.con-otp-form {
+  margin-top: 100px;
+}
+
+.otpsumbit {
+  background-color: #1a6565 !important;
+  color: white;
+}
+
+.fa-linkedin {
+  color: darkgrey;
+  padding-right: 20px;
+}
+
+.fa-facebook {
+  color: darkgrey;
+  padding-right: 20px;
+}
+
+.fa-twitter {
+  color: darkgrey;
+  padding-right: 20px;
+}
+
+.fa-youtube {
+  color: darkgrey;
+  padding-right: 20px;
+}
+
+.asake2 {
+  color: #4E8075;
+  z-index: 9000;
+  font-size: 70px;
+  margin-bottom: 100px;
+}
+
+#force {
+  margin-top: 150px;
+}
+
+.defendfirst {
+  margin: 20px;
+}
+
+.defendSsecond {
+  margin: 20px;
+}
+
+.unique {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.95);
+  padding: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.unique:hover {
+  background-color: rgb(10, 80, 94);
+}
+
+#more {
+  color: #4E8075 !important;
+}
+
+.solution {
+  padding-bottom: 20px;
+  padding-top: 50px;
+  background-color: rgb(10, 80, 94) !important;
+}
+
+.howCheck {
+  padding: 5px;
+  color: #4E8075;
+}
+
+.total {
+  background-color: rgb(10, 80, 94) !important;
+  padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+/* media query section */
+
+@media screen and (max-width: 600px) {
+  .footer-campus h5 {
+    margin-top: 20px;
+  }
+
+  .aca-footer h5 {
+    margin-top: 20px;
+  }
+
+  .camp-footer h5 {
+    margin-top: 20px;
+  }
+  .nav img{
+    margin-left: 5px;
+    width: 55.5%;
+    height: 4vh;
+  }
+
+ 
+
+}
+
+@media (min-width: 523px){
+  .pro{
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .nav__link {
+    display: block;
+    position: static;
+    width: auto;
+    margin-right: 20px;
+    background: none; 
+    transform: none;
+
+  }
+
+
+  .nav__link a {
+    display: inline-block;
+    padding: 15px 20px;
+    text-align: start;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}

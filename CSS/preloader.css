@@ -1,0 +1,31 @@
+.load{
+    height: 100vh;
+    width: 100vw !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 10000;
+    overflow: hidden;
+}
+.load2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#preloader img{
+    height: 80px;
+    width: 100px;
+    animation: animation -0.5s linear 1s infinite alternate;
+}
+@keyframes animation{
+    0%{
+        opacity: 0;
+        fill: #ffffff;
+    }
+    100%{
+        opacity: 1;
+        fill: #5c5552;
+    }
+}
