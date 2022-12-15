@@ -4,7 +4,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #fff;
+    background-color: rgba(17, 13, 13, 0.8);
     z-index: 10000;
     overflow: hidden;
 }

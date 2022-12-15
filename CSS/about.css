@@ -7,7 +7,11 @@
     overflow-x: hidden;
 
   } body {
-    background-color: rgb(9, 56, 65) !important;
+    background-image: linear-gradient(rgba(249, 245, 245, 0.95), rgba(249, 245, 245, 0.95)), url(../img/r-architecture-A0aoiM8doMk-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
   }
   body.o {
     overflow-y: hidden;
@@ -21,12 +25,29 @@
   header {
     position:fixed;
     top: 0;
-    background-color: rgb(9, 56, 65);
+    background-color: #1a6565;
     color: white !important;
     z-index: 200;
     width: 100%;
     margin-bottom: 200px;
     box-shadow: 0px 0px 3px 1px rgba(0, 99, 102, 0.95);
+  }
+
+  #logo1 a{
+    display:flex;
+  }
+  
+  #logo1 h3{
+    padding-top: 10px;
+    font-family: 'Dancing Script', serif;
+    color: white;
+    padding-left: 10px;
+  }
+  
+  #logo1 img{
+    width: 15%;
+    margin-left: 10px;
+    margin-bottom: 20px;
   }
 
   .hover-color{
@@ -38,10 +59,6 @@
   }
 
 
-  .blue {
-    color: rgb(255, 30, 191); 
-    margin-left: 30px;
-  }
   .nav {
     display: flex;
     justify-content: space-between;
@@ -49,11 +66,6 @@
     padding-top: 20px;
     font-family: serif;
 
-  }
-  .logo {
-    font-size: 1.8rem;
-    color: rgb(5, 5, 116);
-    padding-left: 20px;
   }
   .hamburger {
     padding-right: 20px;
@@ -87,9 +99,9 @@
     margin-top: 80px;
   }
   .aboutMain {
+    background-image: linear-gradient(to right, rgba(10, 122, 117, 0.6), rgba(241, 238, 238, 0.8)), url(../img/r-architecture-2gDwlIim3Uw-unsplash.jpg);
     margin-top: 78px;
     text-align: center;
-    background-color: rgb(10, 80, 94);
     padding: 30px;
   }
   #homeID {
@@ -121,24 +133,24 @@
     margin-top: 20px;
   }
   .sideList h3 {
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: serif;
     font-size: 20px;
   }
   .sideList h2 {
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: serif;
     font-size: 40px;
     margin-bottom: 20px;
   }
   .sideList p {
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: serif;
     margin-bottom: 50px;
   }
   .sideListItem1 {
     margin-top: 20px;
-    background-color: rgb(10, 80, 94);
+    background-color: #1a6565;
     padding: 20px;
   }
   .sideListItem h4 {
@@ -155,7 +167,7 @@
     margin-bottom: 30px;
     font-family: serif;
     font-weight: 500;
-    color: white;
+    color: rgb(0, 0, 0);
   }
   .trustedh6 {
     text-align: center;
@@ -170,6 +182,7 @@
     transition: 1s ease-in-out;
     margin-top: 10px;
     margin-bottom: 20px;
+    background-color: #1a6565;
   }
   .team1:hover {
     border: 1px solid rgb(9, 56, 65);
@@ -190,18 +203,18 @@
     text-align: center;
   }
   .introTeam h3 {
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: serif;
     font-size: 50px;
   }
   .introTeam h6 {
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: serif;
     font-size: large;
     margin-top: 30px;
   }
   .teamsAll {
-    background-color: rgb(10, 80, 94);
+    background-color: transparent;
     padding: 10px;
   }
   .footer-icon {
@@ -210,6 +223,7 @@
   .sub-footer {
     padding: 50px;
     padding-left: 30px !important;
+    background-color: #1a6565;
   }
   .footer-campus h5 {
     color: white;

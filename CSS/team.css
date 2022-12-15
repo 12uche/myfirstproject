@@ -8,7 +8,11 @@ html, body{
 
 }
 body {
-  background-color: rgb(9, 56, 65) !important;
+  background-image: linear-gradient(rgba(249, 245, 245, 0.95), rgba(249, 245, 245, 0.95)), url(../img/r-architecture-A0aoiM8doMk-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 body.o {
   overflow-y: hidden;
@@ -22,7 +26,7 @@ a {
 header {
   position:fixed;
   top: 0;
-  background-color: rgb(9, 56, 65);
+  background-color:#1a6565;
   color: white !important;
   z-index: 200;
   width: 100%;
@@ -39,10 +43,6 @@ header {
 }
 
 
-.blue {
-  color: rgb(255, 30, 191);
-  margin-left: 30px;
-}
 .nav {
   display: flex;
   justify-content: space-between;
@@ -51,13 +51,9 @@ header {
   font-family: serif;
 
 }
-.logo {
-  font-size: 1.8rem;
-  color: rgb(5, 5, 116);
-  padding-left: 20px;
-}
+
 .hamburger {
-  padding-right: 20px;
+  padding-right: 10px;
   cursor: pointer;
 }
 
@@ -85,10 +81,29 @@ header {
   display: block;
   padding: 10px 0 10px 20px;
 }
+
+#logo1 a{
+  display:flex;
+}
+
+#logo1 h3{
+  padding-top: 10px;
+  font-family: 'Dancing Script', serif;
+  color: white;
+  padding-left: 10px;
+}
+
+#logo1 img{
+  width: 15%;
+  margin-left: 5px;
+  margin-bottom: 20px;
+}
+
 .aboutHome {
   margin-top: 80px;
 }
 .aboutMain {
+  background-image: linear-gradient(to right, rgba(10, 122, 117, 0.6), rgba(241, 238, 238, 0.8)), url(../img/r-architecture-2gDwlIim3Uw-unsplash.jpg);
   margin-top: 78px;
   text-align: center;
   background-color: rgb(10, 80, 94);
@@ -132,13 +147,18 @@ header {
   text-align: center;
 }
 .reviewMain1 h3 {
-  color: white;
+  color: rgb(242, 239, 239);
   font-family: serif;
   margin-top: 20px;
   font-size: 20px;
 }
-.reviewMain1 h6 {
+.connect{
+  background-color: #1a6565;
   color: white;
+}
+
+.reviewMain1 h6 {
+  color: rgb(255, 255, 255);
   font-family: serif;
   font-size: 40px;
 }
@@ -155,27 +175,27 @@ header {
   border-radius: 10px;
 }
 .ceoDetail p {
-  color: white;
+  color: rgb(0, 0, 0);
   margin-top: 40px;
 }
 .ceoDetail h5 {
-  color: white;
+  color: rgb(0, 0, 0);
   font-family: serif;
   margin-top: 20px;
   margin-bottom: 50px;
 }
 .ceoDetail h6 {
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 50px;
   font-family: serif;
 }
 .ceoDetail h4 {
-  color: white;
+  color: rgb(0, 0, 0);
   font-family: serif;
   margin-bottom: 25px;
 }
 .fa-check {
-  color: white;
+  color: rgb(0, 0, 0);
   margin-top: 8px;
   padding-right: 20px;
 }
@@ -185,7 +205,7 @@ header {
   text-align: center;
 }
 .connect h5 {
-  color: white;
+  color: rgb(255, 255, 255);
   font-weight: bold;
   font-family: serif;
   margin-top: 50px;
@@ -196,21 +216,21 @@ header {
 .con-soc {
   margin-top: 53px;
   padding-left: 5px;
-  color: white;
+  color: rgb(230, 228, 228);
   padding-left: 10px;
 }
 .expert {
-  background-color: rgb(10, 80, 94) !important;
+  background-color:transparent !important;
   padding-bottom: 50px ;
 }
 .expert h6 {
   text-align: center;
-  color: white;
+  color: rgb(0, 0, 0);
   font-family: serif;
 }
 .expert h3 {
   text-align: center;
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: bold;
   margin-bottom: 50px;
 }
@@ -218,6 +238,7 @@ header {
   border: 1px solid rgb(14, 116, 136);
   transition: 1s ease-in-out;
   text-align: center;
+  background-color: #1a6565;
 }
 .teamBoard:hover {
   border: 1px solid rgb(9, 56, 65);
@@ -244,6 +265,7 @@ header {
 .sub-footer {
   padding: 50px;
   padding-left: 30px !important;
+  background-color: #1a6565;
 }
 .footer-campus h5 {
   color: white;
@@ -312,7 +334,7 @@ header {
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .footer-campus h5 {
     margin-top: 20px;
   }
@@ -322,14 +344,24 @@ header {
   .camp-footer h5 {
     margin-top: 20px;
   }
+  .aboutMain {
+    background-image: linear-gradient(to right, rgba(10, 122, 117, 0.6), rgba(241, 238, 238, 0.8)), url(../img/r-architecture-2gDwlIim3Uw-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 78px;
+    text-align: center;
+    background-color: rgb(10, 80, 94);
+    padding: 30px;
+  } 
 }
 
-@media screen and (min-width: 830px) {
+@media screen and (min-width: 800px) {
   .nav__link {
     display: block;
     position: static;
     width: auto;
-    margin-right: 20px;
+    margin-right: 15px;
     background: none;
     transform: none;
   }
@@ -343,4 +375,6 @@ header {
   .hamburger {
     display: none;
   }
+
+
 }

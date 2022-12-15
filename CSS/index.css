@@ -152,11 +152,6 @@ header {
   margin-top: 5rem;
   text-align: center;
 }
-.fee a:hover{
-  border: 4px solid rgba(10, 122, 117, 0.6);
-  background: transparent;
-  border-radius: 15px 15px;
-}
 
 .joy{
   background-image: linear-gradient(rgba(10, 122, 117, 0.6), rgba(241, 238, 238, 0.8)), url(../img/r-architecture-2gDwlIim3Uw-unsplash.jpg) ;
@@ -165,12 +160,12 @@ header {
   background-size: cover;
   width: 100%;
   height: 100vh;
-  padding-top: 10rem;
   text-align: center;
+  padding-top: 30%;
 }
 .fee{
   display: flex;
-  background-color:  #1a6565;
+  background-color:  #1a6565; 
 }
 .fee h1{
   font-size: 40px;
@@ -188,23 +183,93 @@ header {
 .yo {
   color: #4E8075;
 }
-
 .mo img{
   border-radius: 25%;
   height: 90vh;
 }
 
 .howText{
-  color: black;
+  color: #606063;
   font-size: 50px;
 }
 .howText2{
-  color: black;
+  color: #606063;
+}
+
+.slider{
+  height: 250px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.slide-track{
+  display: flex;
+  width: calc(250px * 18);
+  animation: scroll 40s linear infinite;
+}
+
+.slide-track:hover{
+  animation-play-state: paused;
+}
+
+@keyframes scroll{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(-250px * 9));
+  }
+}
+
+.slide{
+  height: 200px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  perspective: 100px;
+
+}
+.slide img{
+  width: 100%;
+  height: 30vh;
+  transition: transform 1s;
+  border-radius: 15px 15px;
+} 
+
+.slide img:hover{
+  transform: translateZ(20px);
+  border-radius: 15px  15px;
+}
+
+.slider::before,
+.slider::after{
+  background: linear-gradient(to right,rgba(255,255,255,1),rgba(255,255,255,0) 100%);
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 15%;
+  z-index: 2;
+}
+
+.slider::before{
+  left: 0;
+  top: 0;
+}
+.slider::after{
+  right: 0;
+  top: 0 ;
+  transform: rotateZ(180deg);
 }
 
 
 center {
   margin-top: 50px;
+  color: #606063;
 }
 
 hr {
@@ -306,6 +371,12 @@ hr {
 
 .section-p1 {
   padding: 40px 0;
+}
+.section-p1 h2{
+  color: #606063;
+}
+.section-p1 p{
+  color: #606063;
 }
 
 .section-p1 {
@@ -425,7 +496,7 @@ hr {
 #newletter p {
   font-size: 14px;
   font-weight: 600;
-  color: #818ea0;
+  color: #cce7d0;
 }
 
 #newletter .form {
@@ -464,7 +535,7 @@ hr {
   padding: 50px;
   padding-left: 30px !important;
   background-color: #1a6565;
-  color: black;
+  color: rgba(0, 0, 0, 0.8);
 
 }
 
@@ -487,13 +558,13 @@ hr {
 }
 
 .footer-email {
-  color: #083d31 !important;
+  color: white !important;
   font-size: 17px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .footer-item {
-  color: #0a483a !important;
+  color: white !important;
   font-size: 17px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -605,14 +676,15 @@ hr {
     height: 4vh;
   }
 
+  .fee{
+    height: 60vh;
+  }
+  .joy{
+    height: 60vh;
+  }
+
  
 
-}
-
-@media (min-width: 523px){
-  .pro{
-    justify-content: center;
-  }
 }
 
 @media screen and (min-width: 800px) {
